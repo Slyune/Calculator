@@ -1,18 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:stretchColumns="*"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.slyune.calculator.MainActivity">
-
+    android:layout_height="match_parent">
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="0"
+        android:id="@+id/title"
+        android:textSize="35sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="0"
+        android:id="@+id/input"
+        android:gravity="end"
+        android:textSize="35sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+   <TextView android:layout_weight="1"/>
+   <TableRow>
+      <Button android:id="@+id/btnNumAC" android:text="AC"/>
+      <Button android:id="@+id/btnNumZF" android:text="±"/>
+      <Button android:id="@+id/btnNumYu" android:text="%"/>
+      <Button android:id="@+id/btnNumGH" android:text="√"/>
+   </TableRow>
+      <TableRow>
+         <Button android:id="@+id/btnNum7" android:text="7"/>
+         <Button android:id="@+id/btnNum8" android:text="8"/>
+         <Button android:id="@+id/btnNum9" android:text="9"/>
+         <Button android:id="@+id/btnNumHe" android:text="+"/>
+      </TableRow>
+      <TableRow>
+         <Button android:id="@+id/btnNum4" android:text="4"/>
+         <Button android:id="@+id/btnNum5" android:text="5"/>
+         <Button android:id="@+id/btnNum6" android:text="6"/>
+         <Button android:id="@+id/btnNumCha" android:text="-"/>
+      </TableRow>
+      <TableRow>
+         <Button android:id="@+id/btnNum1" android:text="1"/>
+         <Button android:id="@+id/btnNum2" android:text="2"/>
+         <Button android:id="@+id/btnNum3" android:text="3"/>
+         <Button android:id="@+id/btnNumJi" android:text="x" android:textAllCaps="false"/>
+      </TableRow>
+      <TableRow>
+         <Button android:id="@+id/btnNum0" android:text="0"/>
+         <Button android:id="@+id/btnNumDian" android:text="."/>
+         <Button android:id="@+id/btnNumDeng" android:text="="/>
+         <Button android:id="@+id/btnNumChu" android:text="/"/>
+      </TableRow>
 
-</android.support.constraint.ConstraintLayout>
+</TableLayout>
